@@ -1,0 +1,159 @@
+
+#encabezado{
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1;
+   }
+   .contenedor{
+    background-color: white;
+    display: flex;
+    justify-content: space-between; 
+   
+    
+   }
+   .logoitt img{
+    width: 50%;
+    display: block;
+    height: 60%;
+    margin-right: 40%;
+    margin-top: 20%;
+    margin-left: 50%;
+  }
+  
+   nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    margin-left: -60%;
+    
+    
+  }
+  
+  nav li {
+    display: flex;
+    justify-content: center;
+   margin-left: 8%;
+    margin-top: 7%;
+  
+  }
+  
+  nav a {
+    color: #333;
+    font-size: 140%;
+    text-decoration: none;
+  }
+  nav a:hover{
+    color: rgb(11, 54, 139);
+  }
+
+  #contenido {
+    margin-top: 100px; /* Igual a la altura del encabezado */
+  }
+  .imagenes{
+    width: 100%;
+    height: 100%;
+    
+   }
+   .contenedor-presentacion {
+    background-color: white;
+    border: 1px solid #105B95;
+    padding: 20px;
+    border-radius: 4px;
+    
+  }
+  
+  .contenedor-presentacion h2 {
+    margin-top: 0;
+    font-size: 200% ;
+  }
+  
+  .contenido-presentacion {
+    display: flex;
+  }
+  
+  .texto {
+    flex: 1;
+  }
+  
+  .texto p {
+    margin-bottom: 10px;
+    font-size: 150%;
+  }
+
+ 
+  .contenedor-datos {
+    float: right; /* Para colocar el contenedor a la derecha */
+    width: 300px; /* Ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    background-color: white;
+    margin-top: 5%;
+  }
+  
+  .lista-datos {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el espaciado interno de la lista */
+  }
+  
+  .lista-datos li {
+    font-size: 120%;
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+    border-bottom: 1px solid #ccc; /* Agrega una línea inferior a cada elemento */
+    padding-bottom: 15px; /* Espaciado inferior entre la línea y el texto */
+  }
+  
+  .contenedor-izquierda {
+    float: left; /* Alinea el contenedor a la izquierda */
+    width: 70%;
+    padding: 10px;
+    background-color: white;
+    margin-top: 5%;
+    text-align: justify;
+  }
+  
+ 
+  #img-info img{
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+  }
+  
+  .contenedor-boton{
+   margin-left: 80%;
+   margin-top: 30%;
+   
+  }
+  .boton-inscripcion {
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    background-color: #105B95; /* Color de fondo azul */
+    color: white; /* Color de letra blanco */
+    border: none; /* Quita el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+
+ 
+  
+
+  footer {
+    background-color: #105B95;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1rem;
+    color: #f5f5f5;
+    display: flex;
+    margin-top: 15%;
+  }
+
+  
+
+  .direccion{
+    width: 50%;
+    
+ }
+
+  .contacto{
+    width: 50%;
+ }

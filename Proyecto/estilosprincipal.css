@@ -1,0 +1,226 @@
+#encabezado{
+  position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1;
+ }
+ .contenedor{
+  background-color: white;
+  display: flex;
+  justify-content: space-between; 
+ 
+  
+ }
+ .logoitt img{
+  width: 50%;
+  display: block;
+  height: 60%;
+  margin-right: 40%;
+  margin-top: 20%;
+  margin-left: 50%;
+}
+
+ nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  margin-left: -60%;
+  
+  
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+ margin-left: 8%;
+  margin-top: 7%;
+
+}
+
+nav a {
+  color: #333;
+  font-size: 140%;
+  text-decoration: none;
+}
+nav a:hover{
+  color: rgb(11, 54, 139);
+}
+#contenido {
+  margin-top: 100px; /* Igual a la altura del encabezado */
+}
+
+.imagenes{
+  width: 100%;
+  height: 100%;
+  
+ }
+
+ #outer-container {
+  background-color: #105B95;
+  padding: 55px;
+}
+
+#inner-container {
+  background-color: white;
+  padding: 30px;
+  color: black;
+  text-align: center;
+}
+
+#inner-container p {
+  font-size: 35px;
+}
+
+#dp{
+  border-bottom: 2px solid moccasin;
+  padding-bottom: 1%;
+}
+.actividadesdisponibles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.liactividades {
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.liactividades:hover {
+  transform: scale(1.05);
+}
+
+.actividadimg {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.actividaddetalles {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+}
+
+.actividadnombre {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.actividaddescripcion {
+  font-size: 1.1em;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.actividadfecha {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 0;
+}
+#aepresentacion {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  transition: all 0.5s;
+  
+}
+#aepresentacion p {
+  margin: 1px 0; 
+}
+
+#aepresentacion #p1{
+font-size: 40px;
+color: #105B95;
+}
+
+#aepresentacion #p2{
+  font-size: 80px;
+  color: #105B95;
+}
+
+#aepresentacion #p3{
+  font-size: 40px;
+  color: #105B95;
+}
+.mostrar-btn {
+  display: none;
+  background-color: #105B95;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.liactividades:hover .mostrar-btn {
+  display: block;
+}
+#sspresentacion {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  transition: all 0.5s;
+
+}
+
+#sspresentacion p {
+  margin: 1px 0; 
+}
+
+#sspresentacion #s1{
+  font-size: 40px;
+  color: #105B95;
+}
+
+#sspresentacion #s2{
+  font-size: 40px;
+  color: #105B95;
+}
+footer {
+  background-color: #105B95;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 1rem;
+  color: #f5f5f5;
+  display: flex;
+  margin-top: 10%;
+}
+
+
+
+.direccion{
+  width: 50%;
+  
+}
+
+.contacto{
+  width: 50%;
+}
+

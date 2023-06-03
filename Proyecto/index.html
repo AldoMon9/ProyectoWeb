@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Actividades Extraescolares</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="script.js"></script>
+   </head>
+
+  <body>
+    <header id="encabezado">
+      <div class="contenedor">
+        <div class="logoitt">
+          <img src="itt.png" alt="Logo Instituto Tecnológico de Tijuana">
+        </div>
+        <nav>
+          <ul>
+            <li id="inicio"><a href="#">Inicio</a></li>
+            <li id="Mooc's"><a href="https://mooc.tecnm.mx/">Mooc´s</a></li>
+            <li id="SobreN"><a href="#footer">Sobre nosotros</a></li>
+            <li id="Registrarse"><a href="#"onclick="openModal()">Registrarse</a></li>
+            <li id="IniciarSesion"><a href="#" onclick="openModalLogin()">Iniciar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    
+    <main>
+      <div id="contenido">
+        <img class="imagenes" src="imagenes.png" alt="logos">
+      </div>
+      
+      <section class="presentacion">
+        
+        <div class="bienvenida">
+          <h1>¡Bienvenidos estudiantes del Instituto Tecnológico de Tijuana!</h1>
+          <p>Estamos encantados de presentarles nuestra página web diseñada especialmente para ayudarles a visualizar y participar en las actividades extraescolares disponibles en la institución</p>
+        </div>
+        <img src="ae.png" alt="ActividadesExtraescolares">
+
+        <div class="mensaje">
+        <p>Sabemos que la vida académica puede ser demandante, por eso queremos hacer su experiencia lo más enriquecedora posible. En nuestra página podrán encontrar una amplia variedad de actividades extraescolares que les permitirán complementar su formación académica, además de otorgarles créditos complementarios necesarios para graduarse.</p>
+        <p>Creemos que la educación va más allá del aula y que las actividades extraescolares son una excelente oportunidad para desarrollar habilidades y competencias necesarias para su futuro profesional. Por ello, en nuestra página web encontrarán una amplia gama de actividades, desde deportes y arte, hasta voluntariado y liderazgo.</p>
+        </div>
+        
+        <div class="invitacion">
+          <p>¡No esperen más para explorar nuestras opciones de actividades extraescolares y enriquecer su experiencia académica!</p>
+         </div>
+       
+        </section>
+        
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <form id="registro">
+              <h2>Si aun no lo haces, Registrate </h2>
+              <label for="nombres">Nombre(s):</label>
+              <input type="text" name="nombres" id="nombres" required>
+              <label for="apellidos">Apellidos: </label>
+              <input type="text" name="apellidos" id="apellidos" required>
+              <label for="num_control">No.Control: </label>
+              <input type="text" name="num_control" id="num_control" required>
+              <label for="carrera">Carrera: </label>
+              <input type="text" name="carrera" id="carrera" required>
+              <label for="correo">Correo electrónico institucional:</label>
+              <input type="email" name="correo" id="correo" required>
+              <label for="contraseña">Contraseña:</label>
+              <input type="password" name="contraseña" id="contraseña" required>
+              <button class="btnRegistrarse" type="submit" value="Registrarse" id="registerBtn" onclick="showPopup()">Registrarse</button>
+              <button class="btnCerrar" onclick="closeModal()">Cerrar</button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Ventana emergente -->
+        <div class="popup" id="popup">
+          <div class="popup-content">
+            <h2>Registro exitoso</h2>
+            <p>Tu registro se ha realizado correctamente.</p>
+            <button id="closeBtn" onclick="closePopup()">Cerrar</button>
+          </div>
+        </div>
+        
+        <div id="modalLogin" class="modalLogin">
+          <div class="modalLogin-content">
+            <form id="login" >
+              <h2>Inicia sesión en tu cuenta</h2>
+              <label for="numcontrol">No.Control:</label>
+              <input type="text" id="numcontrol" name="numcontrol" required>
+              <label for="contrasena">Contraseña:</label>
+              <input type="password" id="contrasena" name="contrasena" required>
+              <input type="submit" value="Iniciar Sesión" onclick="redirectToPrincipal()">
+              <div class="forgot-password">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+              </div>
+              <div class="register">
+                ¿Aún no tienes una cuenta? <a href="#" onclick="openModalFromLogin()">Registrarme</a>
+              </div>
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            </form>
+          </div>
+        </div>
+        
+
+    </main>
+
+    <footer id="footer">
+      
+        <div class="direccion">
+            <h3>Dirección</h3>
+            <p>Instituto Tecnológico de Tijuana Calzada Del Tecnológico S/N</p>
+            <p>Fraccionamiento Tomas Aquino.</p>
+            <p>Tijuana, Baja California.</p>
+            <p>Código postal 22414</p>
+          </div>
+
+          <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Email: webmaster@tijuana.tecnm.mx</p>
+            <p>Conmutador: +52 (664) 607 8400</p>
+          </div>
+          
+          
+    </footer>
+  </body>
+  
+</html>
